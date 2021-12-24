@@ -5,7 +5,7 @@ function preload(){
     image1=loadImage("Shoes.jpg");
 }
 function setup(){
-    canvas=createCanvas(620,600);
+    canvas=createCanvas(620,550);
     canvas.center();
     
     objectDetecter=ml5.objectDetector("cocossd",modelLoaded);
@@ -25,7 +25,7 @@ else{
 }
 }
 function draw(){
-    image(image1,0,0,620,600);
+    image(image1,0,0,620,550);
     if(status != ""){
         r=random(255);
         g=random(255);
